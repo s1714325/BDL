@@ -91,6 +91,10 @@ contract token {
         return balances[msg.sender];
     }
     
+    function gettokenprice() public view returns (uint256) {
+        return tokenprice;
+    }
+    
     function contractsBalance() public view returns (uint256) {
         return address(this).balance;
     }
